@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view-transition" content="same-origin">
+  <title>Portafolio de Sunny - Proyectos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <ul>
+    <li><a href="https://sunnyglitchue.github.io">Menú Principal</a></li>
+    <li><a href="https://sunnyglitchue.github.io/proyectos" class="active">Proyectos</a></li>
+    <li><a href="https://sunnyglitchue.github.io/sobre-mi">Sobre mi</a></li>
+    <li><a href="https://sunnyglitchue.github.io/contacto">Contacto</a></li>
+    <li style="float:right"><a href="https://sunnyglitchue.github.io/guestbook">Mi Guestbook</a></li>
+  </ul>
+  
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="capsula-grid">
+      <div class="capsula">
+        <a href="musica/doombringer/index.html">
+          <img src="https://files.catbox.moe/l3prkp.jpg" alt="Doombringer">
+        </a>
+        <p>Doombringer (Sunkyuu Remix)</p>
+        <audio id="audio1" src="https://files.catbox.moe/v4luyp.mp3"></audio>
+        <button onclick="togglePreview('audio1', this)">▶ Preview</button>
+      </div>
+
+      <div class="capsula">
+        <a href="musica/scrap/index.html">
+          <img src="https://files.catbox.moe/4b7419.png" alt="Scrap">
+        </a>
+        <p>Scrap</p>
+        <audio id="audio2" src="https://files.catbox.moe/sxc1s5.mp3"></audio>
+        <button onclick="togglePreview('audio2', this)">▶ Preview</button>
+      </div>
+
+      <div class="capsula">
+        <a href="musica/sunkyuu-past/index.html">
+          <img src="https://files.catbox.moe/glk9sr.gif" alt="Sunkyuu's Past">
+        </a>
+        <p>Sunkyuu's Past</p>
+        <audio id="audio3" src="https://files.catbox.moe/zu0np2.mp3"></audio>
+        <button onclick="togglePreview('audio3', this)">▶ Preview</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function togglePreview(audioId, button) {
+      const audio = document.getElementById(audioId);
+
+      if (audio.paused) {
+        audio.play();
+        button.textContent = '⏸ Preview';
+      } else {
+        audio.pause();
+        button.textContent = '▶ Preview';
+      }
+
+      audio.onended = () => {
+        button.textContent = '▶ Preview';
+      };
+    }
+  </script>
+
+  <footer>
+    <p>@Sunny/SunkyuuMusic, <script>document.write(new Date().getFullYear());</script></p>
+  </footer>
+
+</body>
+</html>
