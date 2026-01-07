@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny - MIS CANCIONES</title>
+    <link rel="stylesheet" href="style-music.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-links"> <a href="index.html">INICIO</a> | <a href="animaciones.html">ANIMACIONES</a> | <a
+                href="#">MUSICA</a> | <a href="contacto.html">CONTACTO</a> | <a href="guestbook.html">GUESTBOOK</a>
+        </div>
+        <div class="nav-icons">
+            <div class="sq gold"></div>
+            <div class="sq red"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="song-widget">
+            <div class="song-header">MIS CANCIONES</div>
+            <div class="song-display-area">
+                <div class="song-title" id="displayTitle">CARGANDO...</div>
+                <div class="carousel-wrapper"> <button class="nav-arrow left" onclick="moveSlide(-1)">
+                        <div class="arrow-shape left"></div>
+                    </button>
+                    <div class="cards-container" id="cardsContainer"> </div> <button class="nav-arrow right"
+                        onclick="moveSlide(1)">
+                        <div class="arrow-shape right"></div>
+                    </button>
+                </div>
+                <div class="song-footer-date" id="displayDate">ENERO 2026</div>
+            </div>
+        </div>
+        <p>Ve a la derecha para encontrar canciones desde 2026 hasta 2021, y a la izquierda para la inversa!</p>
+    </div>
+    <script src="music.js"></script>
+</body>
+
+</html>

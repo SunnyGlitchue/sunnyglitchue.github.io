@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.05)), #3e7bad;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.05)), #991ae2;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
   padding: 10px;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .box {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), #004b87;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), #700087;
   border: 4px solid black;
   color: white;
   position: relative;
@@ -106,7 +106,7 @@ body {
 }
 
 .header-tab {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.05)), #004b87;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.05)), #3d015f;
   border: 4px solid black;
   border-bottom: none;
   padding: 5px 10px;
